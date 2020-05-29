@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FlowLableSearchHistory</string>
+    <string name="search_history_title">搜索历史</string>
+    <string name="add_content">添加内容</string>
+</resources>

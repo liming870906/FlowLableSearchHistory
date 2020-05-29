@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_history_search_base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/et_print_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_16"
+            android:hint="输入搜索词"/>
+        <Button
+            android:id="@+id/btn_add_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_content"/>
+        <LinearLayout
+            android:id="@+id/ll_history_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_top_history_search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/tv_head_history_search_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_11"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/dp_16"
+                    android:text="@string/search_history_title"
+                    android:textColor="@color/color_777777"
+                    android:textSize="@dimen/text_size_42" />
+
+                <ImageButton
+                    android:id="@+id/ib_head_history_search_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp_10.6"
+                    android:layout_marginRight="@dimen/dp_17"
+                    android:background="@color/transparent"
+                    android:src="@drawable/search_history_delete_icon" />
+            </RelativeLayout>
+
+            <com.lm.flowlablesearchhistory.view.layouts.FlowLayout
+                android:id="@+id/flowlayout_history_search_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_marginBottom="@dimen/dp_14"
+                android:orientation="horizontal"
+                app:layoutDirection="ltr"
+                app:maxLines="2" />
+
+            <com.lm.flowlablesearchhistory.view.layouts.FlowLayout
+                android:id="@+id/flowlayout_history_search_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_marginBottom="@dimen/dp_14"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layoutDirection="ltr"
+                app:maxLines="5" />
+
+            <ImageButton
+                android:id="@+id/btn_V"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/open_history_search"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_8"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:background="@color/color_f2f5f7" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
